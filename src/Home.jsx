@@ -148,6 +148,13 @@ const Home = ({showplant, setShowplant}) => {
                                 ))}
                             </div>
                         </div>
+
+                        <div id="MEDICINAL_plants" className="plant_container container_main">
+                            <div className="text">
+                                <h1>MEDICINAL PLANTS</h1>
+                            </div>
+                            <div style={{marginLeft: "230px", fontSize: "20px", marginTop: "-20px" }}>Unfortunately, this item is not available at the moment</div>
+                        </div>
                     </div>
                 ) : (
                     <div className="total_amount_detail">
