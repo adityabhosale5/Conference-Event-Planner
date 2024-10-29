@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from "react";
+import "./App.css";
+import AboutUs from "./AboutUs";
+import Home from "./Home";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [showplant, setShowplant] = useState(false);
+
+  const handleGetStarted = () => {
+    setShowplant(true);
+  };
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <header className="first_page">
+        <div className="main_event">
+          <div className="first_page_name_btn">
+            <h1 className="budget_heading">BloomEase Solutions</h1>
+            <p className="budget_sentence"> Bring Nature Home with Ease!</p>
+            <div className="getstarted_btn">
+              <button onClick={() => handleGetStarted()} className="get-started-btn">
+                Get Started
+              </button>
+            </div>
+          </div>
+          <div className="aboutus_main">
+            <AboutUs />
+          </div>
+        </div>
+      </header>
+
+      <div className={`event-list-container ${showplant ? 'visible' : ''}`}>
+        <Home showplant = {showplant} setShowplant = {setShowplant}/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

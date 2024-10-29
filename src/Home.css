@@ -1,0 +1,173 @@
+/* plant selection styles */
+
+navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  background-color:#90ef73;
+  color: white;
+  width: 100vw;
+}
+
+.company_logo {
+  font-size: 25px;
+  color: #0d5700;
+  font-weight: 700;
+}
+
+.right-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.details_button {
+  padding: 8px 16px;
+  margin-right: 25px;
+  border: none;
+  background-color: transparent; /* Make background transparent */
+  cursor: pointer;
+  position: relative; /* Needed for the absolute positioning of the count */
+}
+
+.details_button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.plant_container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: -180px;
+    font-size: 24px;
+  }
+  
+  .plant_selection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    width: 90vw;
+    margin-left: 250px;
+  }
+  
+  .plant_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 400px;
+  }
+  .text h1{
+    /* width: 900px; */
+    font-size: 35px;
+    /* background-color: #133b6a; */
+    color: rgb(34, 98, 0);
+    /* width:990px; */
+    /* height: 70px; */
+    margin-left: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .plant_main .text {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .plant_main .cost {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .plant_main .desc {
+    /* margin-top: 10px; */
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    padding: 0px 30px;
+  }
+  .quantity-value {
+    margin: 0 10px;
+  }
+  .main_container{
+    display: flex;    
+  }
+  .items-information {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    margin-top: 100px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .plant_main .img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .button_container .add-to-cart-btn{
+    /* background-color: red; */
+    justify-content: center;
+    margin-bottom: 16px;
+    width:140px ;
+    font-size: 15px;
+    display: flex;
+    background-color: #194f00;
+    color: white;
+    border-radius:10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .navbar_event{
+    position: fixed;
+    top: 1px;
+    z-index: 99;
+  }
+  .btn-disabled {
+    opacity: 0.5; /* Reduce opacity to visually indicate disabled state */
+    cursor: not-allowed; /* Change cursor to indicate that the button is not clickable */
+  }
+  @media (max-width: 700px) {
+    navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px;
+        background-color: #133b6a;
+        color: white;
+        width: 100vw;
+    }
+    .nav_links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .left_navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+    }
+
+}

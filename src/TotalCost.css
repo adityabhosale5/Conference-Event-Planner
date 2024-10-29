@@ -1,0 +1,193 @@
+.pricing-app {
+ margin-top: 130px;
+ width: 100vw;
+ height: 100vh;
+ align-items: center;
+ justify-content: center;
+}
+
+
+.pricing-app .header {
+  font-family: dosis, sans-serif;
+  line-height: 1;
+  margin: 0;
+  display: flex;
+  /* padding: 0 0 10px; */
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.selected_plants{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  width: 90vw;
+  margin-top: 30px;
+  margin-left: 80px;
+}
+.selected_plant {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid lightgrey;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  width: 420px;
+}
+
+.selected_plant .img img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.selected_plant .desc .text {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.selected_plant .desc .cost {
+  font-size: 15px;
+  margin-left: -30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #333;
+  padding: 0px 30px;
+}
+.selected_plant .desc .pcost {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  margin-left: -30px;
+  font-weight: 500;
+  color: #333;
+  padding: 0px 30px;
+}
+
+.button_containerr{
+  /* background-color: red; */
+  width:200px ;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #48ff00;
+  color: black;
+  border: none;
+  width: 10px;
+  height: 30px;
+   border-radius: 10px;
+  cursor: pointer;
+}
+.btn-warning {
+  background-color: #ff0000;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  color: black;
+  width: 10px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-disabled {
+  opacity: 0.5; /* Reduce opacity to visually indicate disabled state */
+  cursor: not-allowed; /* Change cursor to indicate that the button is not clickable */
+}
+
+.del{
+  justify-content: center;
+  width:100px ;
+  font-size: 15px;
+  display: flex;
+  background-color: #194f00;
+  color: white;
+  border-radius:10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btns{
+  /* display: block; */
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.continue{
+  justify-content: center;
+  width:250px ;
+  font-size: 20px;
+  display: flex;
+  background-color: #194f00;
+  color: white;
+  border-radius:10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkout{
+  justify-content: center;
+  width:250px ;
+  font-size: 20px;
+  display: flex;
+  background-color: #194f00;
+  color: white;
+  border-radius:10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+	width: 300px;
+	height: 250px;
+	z-index: 1000;
+	padding: 20px;
+	text-align: center;
+}
+
+.popup-content img {
+	width: 70px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.popup-content p {
+	font-size: 15px;
+  font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.popup-content button {
+	background-color: #194f00;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.popup-content button:hover {
+	background-color: #45a049;
+}
